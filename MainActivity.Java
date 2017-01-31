@@ -7,6 +7,8 @@
 
 package todolist.mths.todolist;
 
+//Import needed packages
+
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.database.Cursor;
@@ -25,11 +27,17 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+//Database
+
 import todolist.mths.todolist.db.TaskContract;
 import todolist.mths.todolist.db.TaskDbHelper;
 
+
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
+    
+    //Fields
+    
     private TaskDbHelper mHelper;
     private ListView mTaskListView;
     private ArrayAdapter<String> mAdapter;
@@ -39,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Instanciate database helper class
+        
         mHelper = new TaskDbHelper(this);
         mTaskListView = (ListView) findViewById(R.id.list_todo);
         updateUI();
