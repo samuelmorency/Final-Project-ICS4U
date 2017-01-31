@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Made by: Sam Morency
+ * Made for: ICS4U
+ * Made on: January 2017
+ * Java code for main scene
+ *******************************************************************************/
+
 package todolist.mths.todolist;
 
 import android.content.ContentValues;
